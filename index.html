@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="money-master-sec py-10">
+            <div class="container max-w-screen-xl w-full mx-auto px-10">
+                <h1 class="money-master-title text-center text-5xl font-bold mb-10" style="color: #0d9488;">Money Master💰</h1>
+                <div class="money-master-cntlr flex items-center">
+                    <div class="money-master-lft-image w-2/4 pr-14 ">
+                        <img src="money-master-lft-img.jpg" alt="money-master-img">
+                    </div>
+                    <div class="money-master-rgt w-2/4 bg-slate-50 text-center">
+                        <div class="money-master-inr pt-10 pb-5">
+                            <h4 class="income-ttle text-xl font-semibold mb-5 text-center">Income</h4>
+                            <div class="input-field-row">
+                                <label for="" class="text-lg pr-2 w-14">Income:</label>
+                                <input class="bg-gray-300 px-5 py-2 w-56" type="number" name="" id="ms-income-field" placeholder="Income">
+                            </div>
+                            <div class="expenses-innr">
+                                <h3 class="expenses-title text-2xl font-semibold mb-5 text-center">Expenses</h3>
+                                <div class="input-field-row">
+                                    <label for="" class="w-14">Food</label>
+                                    <input class="bg-gray-300 px-5 py-2 w-56" type="number" name="" id="ms-expenses-field1" placeholder="Food">
+                                </div>
+                                <div class="input-field-row">
+                                    <label for="" class="w-14">Rent</label>
+                                    <input class="bg-gray-300 px-5 py-2 w-56" type="number" name="" id="ms-expenses-field2" placeholder="Rent">
+                                </div>
+                                <div class="input-field-row">
+                                    <label for="" class="w-14">Cltoths</label>
+                                    <input class="bg-gray-300 px-5 py-2 w-56" type="number" name="" id="ms-expenses-field3" placeholder="Cloths">
+                                </div>
+                                <button id="btn-calculate" class="ml-20 bg-indigo-500 px-16 py-2 text-white font-semibold">Calcuate</button>
+                            </div>
+                            <div class="total-expenses-balance mt-5 pl-20">
+                                <h3 class="text-center text-2xl font-semibold mb-5 text-center">Total Expenses: $<span id="total-expenses-balance" class="">0</span></h3>
+                                <h3 class="text-center text-2xl font-semibold mb-6 text-center">Balance: $<span id="balance" class="">0</span></h3>
+                            </div>
+                            <div class="save-innr flex  justify-center items-center	">
+                                <div class="input-field-half">
+                                    <label for="" class="w-14">Save</label>
+                                    <input class="bg-gray-300 px-5 py-2 w-56" type="number" name="" id="save-input-field" placeholder="Discount">
+                                </div>
+                                <span class="px-3">%</span>
+                                <button id="btn-save" class="bg-indigo-500 px-16 py-2 text-white font-semibold">Save</button>
+                            </div>
+                            <div class="ml-20 sav-amount-ramin-amount pt-5">
+                                <h2 class="text-center text-2xl font-semibold mb-3 text-center">Saving Amount: $<span id="saving-amount">0</span></h2>
+                                <h2 class="remaining-amount text-center text-2xl font-semibold mb-5 text-center">Remaining Balance: $<span id="remaining-balance">0</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

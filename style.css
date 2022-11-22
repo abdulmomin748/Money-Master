@@ -1,0 +1,51 @@
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    padding-right: 14px;
+    width: 75px!important;
+    font-size: 18px!important;
+}
+input{
+    width: 256px!important;
+    margin-bottom: 20px!important;
+}
+.text-2xl{
+    font-size: 25!important;
+}
+#btn-calculate{
+    font-size: 18px;
+}
+#save-input-field{
+    margin-bottom: 0!important;
+    width: 160px!important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(82, 76, 76)!important;
+    opacity: 1; /* Firefox */
+  }
+  
+input{
+    transition: .5s;
+}
+input:focus{
+    font-size: 20px;
+}
+.money-master-rgt{
+    border: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 1499px) {
+    .container{
+        max-width: 1200px!important;
+    }
+    .text-5xl{
+        font-size: 40px!important;
+    }
+    .money-master-lft-image{
+        padding-right: 30px!important;
+    }
+    .money-master-inr{
+        padding-top: 1.5rem!important;
+    }
+}
